@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="AppCore">
             <connections>
+                <outlet property="tableView" destination="h3N-xp-XfD" id="DWB-qU-pny"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +19,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h3N-xp-XfD">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h3N-xp-XfD" secondAttribute="bottom" id="DMr-3P-X0q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h3N-xp-XfD" secondAttribute="trailing" id="N0R-Ws-Bs9"/>
+                <constraint firstItem="h3N-xp-XfD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vtK-hn-duT"/>
+                <constraint firstItem="h3N-xp-XfD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wz1-ay-NYb"/>
+            </constraints>
             <point key="canvasLocation" x="118" y="21"/>
         </view>
     </objects>
