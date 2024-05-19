@@ -8,19 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F3491ECC2BF8032C00C2588B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3491ECB2BF8032C00C2588B /* AppDelegate.swift */; };
-		F3491ECE2BF8032C00C2588B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3491ECD2BF8032C00C2588B /* SceneDelegate.swift */; };
-		F3491ED02BF8032C00C2588B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3491ECF2BF8032C00C2588B /* ViewController.swift */; };
-		F3491ED32BF8032C00C2588B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3491ED22BF8032C00C2588B /* Base */; };
 		F3491ED52BF8032D00C2588B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3491ED42BF8032D00C2588B /* Assets.xcassets */; };
 		F3491ED82BF8032D00C2588B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3491ED72BF8032D00C2588B /* Base */; };
+		F3491EE22BF8095900C2588B /* AppCore in Frameworks */ = {isa = PBXBuildFile; productRef = F3491EE12BF8095900C2588B /* AppCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3491EC82BF8032C00C2588B /* tada-tanu-playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tada-tanu-playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3491ECB2BF8032C00C2588B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3491ECD2BF8032C00C2588B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3491ECF2BF8032C00C2588B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3491ED22BF8032C00C2588B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3491ED42BF8032D00C2588B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3491ED72BF8032D00C2588B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3491ED92BF8032D00C2588B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3491EE22BF8095900C2588B /* AppCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +38,7 @@
 			children = (
 				F3491ECA2BF8032C00C2588B /* tada-tanu-playground */,
 				F3491EC92BF8032C00C2588B /* Products */,
+				F3491EE02BF8094700C2588B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +54,18 @@
 			isa = PBXGroup;
 			children = (
 				F3491ECB2BF8032C00C2588B /* AppDelegate.swift */,
-				F3491ECD2BF8032C00C2588B /* SceneDelegate.swift */,
-				F3491ECF2BF8032C00C2588B /* ViewController.swift */,
-				F3491ED12BF8032C00C2588B /* Main.storyboard */,
 				F3491ED42BF8032D00C2588B /* Assets.xcassets */,
 				F3491ED62BF8032D00C2588B /* LaunchScreen.storyboard */,
 				F3491ED92BF8032D00C2588B /* Info.plist */,
 			);
-			path = "tada-tanu-playground";
+			name = "tada-tanu-playground";
+			sourceTree = "<group>";
+		};
+		F3491EE02BF8094700C2588B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +84,9 @@
 			dependencies = (
 			);
 			name = "tada-tanu-playground";
+			packageProductDependencies = (
+				F3491EE12BF8095900C2588B /* AppCore */,
+			);
 			productName = "tada-tanu-playground";
 			productReference = F3491EC82BF8032C00C2588B /* tada-tanu-playground.app */;
 			productType = "com.apple.product-type.application";
@@ -127,7 +131,6 @@
 			files = (
 				F3491ED52BF8032D00C2588B /* Assets.xcassets in Resources */,
 				F3491ED82BF8032D00C2588B /* Base in Resources */,
-				F3491ED32BF8032C00C2588B /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +141,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3491ED02BF8032C00C2588B /* ViewController.swift in Sources */,
 				F3491ECC2BF8032C00C2588B /* AppDelegate.swift in Sources */,
-				F3491ECE2BF8032C00C2588B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3491ED12BF8032C00C2588B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3491ED22BF8032C00C2588B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F3491ED62BF8032D00C2588B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,12 +286,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "tada-tanu-playground/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,12 +313,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "tada-tanu-playground/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +354,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3491EE12BF8095900C2588B /* AppCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F3491EC02BF8032C00C2588B /* Project object */;
 }
